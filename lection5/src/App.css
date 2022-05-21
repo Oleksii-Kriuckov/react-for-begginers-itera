@@ -6,8 +6,15 @@
 .line{
 display: flex;
 }
+
 .resBut {
-  margin-top: 20px;
+  margin: 20px auto;
+  display: block;
+}
+
+.battlefield {
+  display: inline-block;
+  margin: auto;
 }
 
 .cell {

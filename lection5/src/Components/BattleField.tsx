@@ -20,7 +20,7 @@ const cellStateMap = {
 const Cell = ({ handleClick, value, x, y }: CellProps) => {
   return (
   <button className="cell" onClick={() => handleClick(y, x)}>
-    {value}
+    {cellStateMap[value]}
     </button>
 )}
 
@@ -31,7 +31,7 @@ type BattlefieldProps = {
 
 export const BattleField = ({ matrix, onFire }: BattlefieldProps) => {
   return (
-    <div>
+    <div className="battlefield">
       {matrix.map((line, lineNumber) => (
         <div className="line" key={lineNumber}>{
           line.map((v, i) => (

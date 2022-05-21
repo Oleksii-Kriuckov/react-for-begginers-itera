@@ -5,7 +5,11 @@ import { ResetButton } from './Components/ResetButton';
 import { useGameState } from './Components/state/useGameState';
 
 function App() {
-  const {turn, reset, matrix, fire} = useGameState();
+  const {turn, reset, matrix, fire, won} = useGameState();
+
+  if (won) {
+    alert('Moscow down')
+  }
   return (
     <div className="App">
       <HeaderWithCounter turn={turn} />
