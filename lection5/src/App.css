@@ -1,0 +1,19 @@
+.App {
+  text-align: center;
+  color: #fff;
+}
+
+.line{
+display: flex;
+}
+.resBut {
+  margin-top: 20px;
+}
+
+.cell {
+  border: 1px solid rgb(64, 159, 248);
+  cursor: pointer;
+  background-color: skyblue;
+  min-height: 2.5em;
+  min-width: 2.5em;
+}
